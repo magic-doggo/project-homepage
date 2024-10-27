@@ -1,0 +1,24 @@
+.diagonal-background {
+    background-color: blueviolet;
+    transform: skew(-30deg);
+    /* max-width: 50%; */
+    display: flex;
+}
+
+.main-picture,
+.header-text {
+    transform: skew(30deg);
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+.main-picture {
+    width: 250px;
+    margin: 20px;
+}
+
+.header-text {
+    background-color: white;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 2px black;
+}
