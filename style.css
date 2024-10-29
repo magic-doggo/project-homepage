@@ -1,24 +1,29 @@
 .diagonal-background {
     background-color: blueviolet;
-    transform: skew(-30deg);
-    /* max-width: 50%; */
-    display: flex;
+    position: absolute;
+    width: 100vw;
+    transform: skewY(-11deg);
+    margin: -8px;
+    height: 450px;
+    transform-origin: top left ;
+    z-index: -1;
 }
 
-.main-picture,
-.header-text {
-    transform: skew(30deg);
-    max-width: 50em;
-    margin: 0 auto;
+header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .main-picture {
-    width: 250px;
-    margin: 20px;
+    width: 450px;
 }
 
 .header-text {
     background-color: white;
     border: 1px solid gray;
     box-shadow: 2px 2px 2px black;
+    flex-wrap: nowrap;
+    /* margin: 150px 0; */
+    /* width: 400px; */
 }
