@@ -10,44 +10,27 @@
 }
 
 header {
-    display: grid;
     background-color: white;
-    border: 1px solid gray;
-    box-shadow: 2px 2px 2px black;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 2fr 2fr 1fr;
-    grid-template-areas: 
-        "image h1"
-        "image ."
-        "text text"
-        ". logos";
-    height: 30vw;
+    display: flex;
 }
 
 .main-picture {
-    width: 450px;
-    /* grid-column: 1 / 2;
-    grid-row: 1 / 3; */
-    grid-area: image;
-}
-
-h1 {
-    /* grid-column: 2 / 3;
-    grid-row: 1 / 2; */
-    grid-area: h1;
-}
-
-.header-text {
-    /* grid-column: 2 / 3; */
-    grid-area: text;
-}
-
-.logo-container { 
-    /* grid-column: 2 / 3;
-    grid-row: 4 / 5; */
-    grid-area: logos;
+    width: 350px;
+    display: inline-block;
 }
 
 .small-logo {
     width: 30px;
 }
+
+.header-info {
+    display: inline-block;
+}
+
+.empty-space {
+    width: 100px;
+    height: 100px;
+    visibility: hidden;
+    float: left;
+}
+/* use float? */
