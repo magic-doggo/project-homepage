@@ -10,13 +10,29 @@
 }
 
 header {
-    background-color: white;
+    /* background-color: white; */
     display: flex;
+    justify-content: center;
+    /* margin: 80px 80px 0 -60px; */
+    margin: 10%;
+    position: relative;
+}
+
+body {
+    display: inline-block;
+    position: relative;
 }
 
 .main-picture {
-    width: 350px;
-    display: inline-block;
+    width: 250px;
+    /* display: inline-block; */
+}
+
+.main-picture-div {
+    /* transform: translate(130px, -50px); */
+    position: absolute;
+    top: -50px;
+    left: -50px;
 }
 
 .small-logo {
@@ -25,12 +41,33 @@ header {
 
 .header-info {
     display: inline-block;
+    background-color: white;
+    border: 1px solid gray;
+    box-shadow: 2px 2px rgb(201, 200, 200);
+    padding: 1em;
 }
 
 .empty-space {
-    width: 100px;
+    width: 200px;
     height: 100px;
     visibility: hidden;
     float: left;
 }
-/* use float? */
+
+h1 {
+    padding-left: 200px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-right: 10px; /* not ideal? */
+}
+
+/* .header-paragraph {
+    padding: 1em;
+} */
+
+
+/* changed body to inline block. how to move header over diagonal */
