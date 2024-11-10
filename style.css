@@ -23,17 +23,15 @@ body {
     position: relative;
 }
 
-.main-picture {
+/* .main-picture {
     width: 250px;
-    /* display: inline-block; */
 }
 
 .main-picture-div {
-    /* transform: translate(130px, -50px); */
     position: absolute;
     top: -50px;
     left: -50px;
-}
+} */
 
 .small-logo {
     width: 30px;
@@ -47,7 +45,7 @@ body {
     padding: 1em;
 }
 
-.empty-space {
+/* .empty-space {
     width: 200px;
     height: 100px;
     visibility: hidden;
@@ -56,7 +54,7 @@ body {
 
 h1 {
     padding-left: 200px;
-}
+} */
 
 .logo-container {
     display: flex;
@@ -65,9 +63,49 @@ h1 {
     padding-right: 10px; /* not ideal? */
 }
 
-/* .header-paragraph {
-    padding: 1em;
-} */
+@media (min-width: 600px) and (max-width: 1200px) {
+    .empty-space {
+        width: 200px;
+        height: 100px;
+        visibility: hidden;
+        float: left;
+    }
+    
+    h1 {
+        padding-left: 200px;
+    }
 
+    .main-picture {
+        width: 250px;
+    }
+    
+    .main-picture-div {
+        position: absolute;
+        top: -50px;
+        left: -50px;
+    }
+}
 
-/* changed body to inline block. how to move header over diagonal */
+@media (min-width: 1200px) {
+    header {
+        display: grid;
+        grid-template-rows: 1fr 10fr 1fr;
+        grid-template-columns: 2fr 3fr;
+    }
+
+    .main-picture {
+        width: 100%;
+        /* max-width: ; */
+    }
+
+    .main-picture-div {
+        grid-column: 1 / 2;
+        grid-row: 1 / 4;
+    }
+
+    .header-info {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    
+}
