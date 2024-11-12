@@ -11,7 +11,37 @@
 <body>
     <div class="diagonal-background"></div>
     <header>
-        <div class="main-picture-div"><img src="corgi square.png" alt="" class="main-picture"></div>
+        <!-- <div class="main-picture-div"> -->
+            <!-- <picture>
+                <source
+                    srcset="corgi-square.png"
+                    media="(min-width: 600px)"
+                    class="main-picture"
+                />
+                <img src="corgi thin.png" alt="" class="main-picture">
+            </picture>  -->
+
+            <picture class="main-picture-div">
+                <!-- <source 
+                  srcset="corgi-square.png"
+                  media="(min-width: 1200px)"
+                  class="main-picture"
+                /> -->
+                <source 
+                  srcset="corgi-square.png"
+                  media="(min-width: 600px)"
+                  class="main-picture"
+
+                />
+                <img 
+                  src="corgi-thin.png" 
+                  alt="Baby Sleeping"
+                  class="main-picture"
+
+                />
+              </picture>
+
+        <!-- </div> -->
         <div class="header-info">
             <h1>About me</h1>
             <div class="header-paragraph">

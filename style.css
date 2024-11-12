@@ -30,10 +30,11 @@ body {
     /* position: relative; */
 }
 
-/* .main-picture {
+ /* .main-picture {
     width: 250px;
-}
+} */
 
+/* 
 .main-picture-div {
     position: absolute;
     top: -50px;
@@ -45,7 +46,7 @@ body {
 }
 
 .header-info {
-    display: inline-block;
+    /* display: inline-block; NO LONGER NEEDED? */
     background-color: white;
     border: 1px solid gray;
     box-shadow: 2px 2px rgb(201, 200, 200);
@@ -92,6 +93,7 @@ h1 {
 
     .main-picture {
         width: 250px;
+
     }
     
     .main-picture-div {
@@ -160,6 +162,10 @@ h1 {
     .projects-list {
         max-width: 600px;
     }
+
+    .diagonal-background {
+        /* height: 250px; */
+    }
 }
 
 /* .projects-list {
@@ -183,3 +189,8 @@ h1 {
 main {
     min-width: 80%;
 }
+
+
+/* SINCE USING PICTURE, only thin image is used */
+/* could stop using picture since I resized the diagonal bg */
+/* add min width to picture on mobile and nothing breaks anymore */
