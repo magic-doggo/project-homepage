@@ -1,5 +1,11 @@
 * {
     box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+
+h1,
+h2 {
+    font-family: "Playfair Display", serif;
 }
 
 .diagonal-background {
@@ -67,7 +73,10 @@ footer {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 2fr 3fr;
+    min-width: 225px;
+    color: white;
+    font-size: large;
 }
 
 .footer-picture {
@@ -88,6 +97,9 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    justify-items: center;
+    gap: 16px;
+    padding: 0 16px 0 16px;
 }
 
 
@@ -223,6 +235,11 @@ footer {
 }
 
 p:nth-child(2) {
-    padding: 15px;
+    /* padding: 0 15px 0 15px; */
     text-align: center;
+}
+
+.project-title {
+    font-size: larger;
+    margin: 0px;
 }
